@@ -1,3 +1,4 @@
+
 import json
 import gspread
 from django.views.decorators.csrf import csrf_exempt
@@ -224,7 +225,7 @@ def indexsiete_view(request):
             nueva_respuesta_cuatro.save()
 
             # Puedes redirigir a donde necesites después de completar el séptimo formulario
-            return redirect('indexdos')
+            return redirect('iframe')
 
         except Exception as e:
             # Maneja cualquier otra excepción que pueda ocurrir
@@ -234,3 +235,5 @@ def indexsiete_view(request):
     else:
         # Si es una solicitud GET, simplemente renderiza el formulario
         return render(request, 'myapp/indexsiete.html')
+def iframe_view(request):
+    return render(request, 'myapp/iframe.html', {})
