@@ -91,15 +91,19 @@ DATABASES = {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'ultracom-modelomadurez',
         'USER': 'usermodelomadurez',
-        'PASSWORD': '@Ultracom2024',
+        'PASSWORD': '{@Ultracom2024}',
         'HOST': 'ultracom-modelomadurez.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
             'driver': 'ODBC Driver 18 for SQL Server',
             'MARS_Connection': 'True',
+            'Encrypt': 'yes',
+            'TrustServerCertificate': 'no',
+            'Connection Timeout': '30',
         },
     }
 }
+
 
 
 # Password validation
