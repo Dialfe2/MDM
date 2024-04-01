@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'ultracom-modelomadurez',
         'USER': 'usermodelomadurez@ultracom-modelomadurez',
-        'PASSWORD': '@Ultracom2024',
+        'PASSWORD': ' @Ultracom2024',
         'HOST': 'ultracom-modelomadurez.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
