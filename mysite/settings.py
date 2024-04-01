@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-(i1or=0_y3f4np(iq+-5x94@z#=y&^qt=k=%en*f3!cd+pqa5b
 DEBUG = True
 
 ALLOWED_HOSTS = ['wa-modelomadurez-ultracom.azurewebsites.net']
-#ALLOWED_HOSTS = [d]
+#ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'ultracom-modelomadurez',
         'USER': 'usermodelomadurez@ultracom-modelomadurez',
-        'PASSWORD': ' @Ultracom2024',
+        'PASSWORD': '@Ultracom2024',
         'HOST': 'ultracom-modelomadurez.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
