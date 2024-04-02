@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 
-
 from pathlib import Path
 from django.core.management.commands.runserver import Command as runserver
 runserver.default_port = "8080"
@@ -88,11 +87,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'ultracom-modelomadurez',
+        'USER': 'usermodelomadurez@ultracom-modelomadurez',
+        'PASSWORD': '@Ultracom2024',
+        'HOST': 'ultracom-modelomadurez.database.windows.net',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 18 for SQL Server',
+        },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
